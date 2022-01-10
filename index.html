@@ -16,14 +16,29 @@
         <img src="">
     </div>
 
-    <form>
-        <label>Buscar</label>
-        <input type="text">
+    <form id="form-busqueda">
+        <label>Search</label>
+        <input id="input-busqueda" type="text" required>
         <label>Mealtype</label>
-        <select>
-            <option></option>
+        <select name="" id="select-comidas" required>
+            <option value="Breakfast">Breakfast</option>
+            <option value="Dinner">Lunch</option>
+            <option value="Snack">Snack</option>
+            <option value="Dinner">Dinner</option>
         </select>
 
+        <label>Diet</label>
+        <select id="select-tipo-comidas">
+            <option value="" selected>Everything</option>
+            <option value="vegetarian">Vegetarian</option>
+            <option value="vegan">Vegan</option>
+        </select>
+
+        <label>Calories</label>
+        <span>From</span>
+        <input type="number">
+
+        <button type="submit">Icon</button>
     </form>
 
 

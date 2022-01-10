@@ -1,0 +1,22 @@
+//Theme colors
+$primary:#a770ef;
+$secondary-color:#e5a44a;
+$error:#d32752;
+//body y receta especifica en modo claro
+//color de fondo:#efefef;
+//color card:#ffffff;
+//modo oscuro
+//body
+////color de fondo:#292929;
+//receta especifica en modo dark
+//color de fondo:#121212
+//color card:#292929
+//spacing
+$base-padding:0.75rem;
+$base-margin:0.75rem;
+//borders
+$base-border-thickness:1px;
+$base-border-radius:20px;
+#form-busqueda {
+    background-color: $primary;
+}
