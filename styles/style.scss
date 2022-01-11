@@ -2,3 +2,6 @@
 @import "reset";
 @import "mixins";
 @import "components/card";
+.hero {
+    @include flex()
+}
