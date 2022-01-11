@@ -2,6 +2,11 @@
 @import "reset";
 @import "mixins";
 @import "components/card";
+@import "components/form";
+body {
+    background-color: $ligh-grey;
+}
+
 .hero {
     @include flex($direction: row, $justify: flex-start, $align: space-between);
     background-image: $background-image;

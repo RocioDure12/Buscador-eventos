@@ -1,0 +1,11 @@
+#form {
+    display: flex;
+    flex-direction: column;
+    margin: $base-margin;
+    padding: $base-padding;
+    width: 200px;
+    input,
+    select {
+        border-radius: $base-border-radius;
+    }
+}

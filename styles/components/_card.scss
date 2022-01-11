@@ -4,9 +4,10 @@
     padding: $base-padding;
     border: $base-border-thickness solid #ddd;
     box-shadow: $base-box-shadow;
-    width: 200px;
+    width: 275px;
     border-radius: $base-border-radius;
     .card-title {
+        text-align: center;
         font-size: $font-size-sm;
         padding-bottom: $base-padding;
         font-weight: bold;
