@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  font-family: Arial;
 }
 
 p,
@@ -12,11 +13,22 @@ h6 {
   margin: 0;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 ul,
 li {
   padding: 0;
   margin: 0;
   list-style-type: none;
+}
+
+img {
+  display: block;
+  height: auto;
+  width: 100%;
 }
 
 .card {
@@ -43,5 +55,29 @@ li {
 
 .card .card-body {
   font-size: 1rem;
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: space-between;
+      -ms-flex-align: space-between;
+          align-items: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background-image: -webkit-gradient(linear, right top, left top, from(#e5a44a), color-stop(#CF8BF3), to(#A770EF));
+  background-image: linear-gradient(to left, #e5a44a, #CF8BF3, #A770EF);
+  color: #e5a44a;
+  font-size: 1.5rem;
+}
+
+.hero .container-image-hero {
+  width: 350px;
 }
 /*# sourceMappingURL=style.css.map */

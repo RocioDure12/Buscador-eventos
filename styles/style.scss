@@ -3,5 +3,11 @@
 @import "mixins";
 @import "components/card";
 .hero {
-    @include flex()
+    @include flex($direction: row, $justify: flex-start, $align: space-between);
+    background-image: $background-image;
+    color: $secondary-color;
+    font-size: $font-size-lg;
+    .container-image-hero {
+        width: 350px;
+    }
 }
