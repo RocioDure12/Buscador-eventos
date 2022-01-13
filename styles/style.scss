@@ -3,15 +3,18 @@
 @import "mixins";
 @import "components/card";
 @import "components/form";
+@import "components/navbar";
 body {
     background-color: $ligh-grey;
 }
 
 .hero {
-    @include flex($direction: row, $justify: flex-start, $align: space-between);
+    @include flex($direction: row, $justify: flex-start, $align: end);
     background-image: $background-image;
-    color: $secondary-color;
-    font-size: $font-size-lg;
+    color: $white;
+    font-size: $font-size-xl;
+    box-shadow: $base-box-shadow;
+    padding: $base-padding;
     .container-image-hero {
         width: 350px;
     }

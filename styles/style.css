@@ -62,10 +62,6 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   margin: 0.75rem;
   padding: 0.75rem;
   width: 200px;
@@ -73,7 +69,31 @@ img {
 
 #form input,
 #form select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   border-radius: 15px;
+  cursor: pointer;
+  padding: 7px 10px;
+  height: 42px;
+}
+
+.nav-bar {
+  visibility: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  padding: 20px;
+  position: fixed;
+  background-color: #a770ef;
+  color: #ffffff;
+  font-size: 2rem;
 }
 
 body {
@@ -88,16 +108,19 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-align: space-between;
-      -ms-flex-align: space-between;
-          align-items: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
   background-image: -webkit-gradient(linear, right top, left top, from(#e5a44a), color-stop(#CF8BF3), to(#A770EF));
   background-image: linear-gradient(to left, #e5a44a, #CF8BF3, #A770EF);
-  color: #e5a44a;
-  font-size: 1.5rem;
+  color: #ffffff;
+  font-size: 2rem;
+  -webkit-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+  padding: 0.75rem;
 }
 
 .hero .container-image-hero {
