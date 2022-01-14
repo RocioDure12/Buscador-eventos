@@ -1,0 +1,39 @@
+#form {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 300px;
+    font-size: $font-size-sm;
+    input {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        border: 1px solid #ccc;
+        border-radius: $base-border-radius;
+    }
+    select {
+        width: 100%;
+        color: black;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: $base-border-radius;
+    }
+}
+
+.btn {
+    background-color: #ddd;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+}
+
+.btn:hover {
+    background-image: $background-image;
+}

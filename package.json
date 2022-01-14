@@ -1,0 +1,22 @@
+{
+  "name": "buscador-eventos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RocioDure12/Buscador-eventos.git"
+  },
+  "author": "Rocio Duré",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RocioDure12/Buscador-eventos/issues"
+  },
+  "homepage": "https://github.com/RocioDure12/Buscador-eventos#readme",
+  "dependencies": {
+    "sass": "^1.45.0"
+  }
+}
