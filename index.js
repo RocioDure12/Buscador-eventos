@@ -1,0 +1,7 @@
+const form = document.querySelector("#form")
+const inputSearch = document.querySelector("#input-search")
+const selectMealtype = document.querySelector("#select-mealtype")
+const selectDiet = document.querySelector("#select-diet")
+const btnSearch = document.querySelector("#btn-search")
+const card = document.querySelector("#card")
+const btnNext = document.querySelector("#btn-next")

@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="images/favicon.png">
     <link rel="stylesheet" href="/styles/style.css">
     <script src="https://kit.fontawesome.com/4856896847.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;800&display=swap" rel="stylesheet">
 
 </head>
 <nav class="nav-bar">
@@ -25,9 +26,9 @@
 
     <form id="form">
         <label>Key word</label>
-        <input id="input-busqueda" type="text" required>
+        <input id="input-search" type="text" required>
         <label>Mealtype</label>
-        <select name="" id="select-comidas" required>
+        <select name="" id="select-mealtype" required>
             <option value="Breakfast">Breakfast</option>
             <option value="Dinner">Lunch</option>
             <option value="Snack">Snack</option>
@@ -35,21 +36,19 @@
         </select>
 
         <label>Diet</label>
-        <select id="select-tipo-comidas">
+        <select id="select-diet">
             <option value="" selected>Everything</option>
             <option value="vegetarian">Vegetarian</option>
             <option value="vegan">Vegan</option>
         </select>
-        <button class="btn" type="submit">Search</button>
+        <button id="btn-search" type="submit">Search</button>
     </form>
+
     <section class="cards-container">
-        <div class="card">
-            <h1 class="card-title">Titulo</h1>
-            <p class="card-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-            <img src="images/undraw_healthy_options_sdo3.svg">
-        </div>
+        <div id="card"></div>
 
     </section>
+    <button id="btn-next">ver mas(agregar animacionen este btn)</button>
 
     <script src="index.js"></script>
 </body>
