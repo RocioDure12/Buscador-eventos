@@ -48,22 +48,25 @@ img {
   border-radius: 15px;
 }
 
-.card .card-title {
-  text-align: center;
-  font-size: 0.75rem;
-  padding-bottom: 0.75rem;
-  font-weight: bold;
-}
-
-.card .card-body {
-  font-size: 1rem;
-}
-
+/*   .card-title {
+        text-align: center;
+        font-size: $font-size-sm;
+        padding-bottom: $base-padding;
+        font-weight: bold;
+    }
+    .card-body {
+        font-size: $base-font-size;
+    }
+}*/
 .cards-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 50%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 600px;
 }
 
 #form {
