@@ -34,3 +34,13 @@ const renderHtml = (data) => {
 
 
 }
+
+const loadNextPage = () => {
+    if (nextLink) {
+        loadData(nextLink)
+    }
+}
+
+btnNext.onclick = () => {
+    loadNextPage()
+}
