@@ -32,14 +32,14 @@ const renderHtml = (data) => {
     }, "")
     cardsContainer.innerHTML += html
 
-    /*const cards = document.querySelectorAll(".card")
+    const cards = document.querySelectorAll(".card")
     for (let i = 0; i < cards.length; i++) {
         const card = cards[i];
         card.onclick = () => {
-            showDetails(data[i])
-        }*/
+            showDetails(data[i], card)
+        }
+    }
 }
-
 const loadNextPage = () => {
     if (nextLink) {
         loadData(nextLink)
@@ -58,7 +58,7 @@ form.onsubmit = (e) => {
 
 }
 
-/*const showDetails = (curr) => {
+const showDetails = (curr, card) => {
     console.log(curr.recipe.calories)
     card.classList.add("display-none")
     cardsContainer.innerHTML = `<div class="card">
@@ -67,4 +67,3 @@ form.onsubmit = (e) => {
 <div id="ingredientes">${curr.recipe.ingredientLines}</div> 
 </div>`
 }
-}*/

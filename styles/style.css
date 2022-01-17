@@ -165,4 +165,8 @@ body {
 .hero .container-image-hero {
   width: 350px;
 }
+
+.display-none {
+  display: none;
+}
 /*# sourceMappingURL=style.css.map */
