@@ -1,12 +1,16 @@
 .nav-bar {
     visibility: hidden;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     width: 100%;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
     padding: 20px;
     position: fixed;
-    background-color: $primary;
+    background-image: $background-image;
     color: $white;
     font-size: $font-size-xl;
+    img{
+        width: 50px;
+        
+    }
 }

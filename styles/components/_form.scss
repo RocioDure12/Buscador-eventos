@@ -1,4 +1,5 @@
 #form {
+    //visibility: hidden;
     display: flex;
     flex-direction: column;
     padding: 10px;
@@ -21,10 +22,10 @@
     }
 }
 
-.btn {
+#btn-search {
     background-color: #ddd;
     border: none;
-    color: black;
+    color:black;
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
@@ -34,6 +35,7 @@
     border-radius: 16px;
 }
 
-.btn:hover {
+#btn-search:hover {
     background-image: $background-image;
+    color: $white;
 }

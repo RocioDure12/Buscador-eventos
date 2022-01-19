@@ -5,6 +5,7 @@ const selectDiet = document.querySelector("#select-diet")
 const btnSearch = document.querySelector("#btn-search")
 const cardsContainer = document.querySelector(".cards-container")
 const card = document.querySelector(".card")
+const recipeInfo = document.querySelector(".card-recipe-info")
 const btnNext = document.querySelector("#btn-next")
 let currentLink
 let nextLink
@@ -36,7 +37,7 @@ const renderHtml = (data) => {
     for (let i = 0; i < cards.length; i++) {
         const card = cards[i];
         card.onclick = () => {
-            showDetails(data[i], card)
+            showDetails(data[i])
         }
     }
 }
@@ -58,12 +59,18 @@ form.onsubmit = (e) => {
 
 }
 
-const showDetails = (curr, card) => {
-    console.log(curr.recipe.calories)
-    card.classList.add("display-none")
-    cardsContainer.innerHTML = `<div class="card">
-<img id="imagen" src=${curr.recipe.image}>
-<h1 id="titulo">${curr.recipe.label}</h1>
-<div id="ingredientes">${curr.recipe.ingredientLines}</div> 
+const showDetails = (curr) => {
+    console.log(curr)
+    //console.log(curr.recipe.calories)
+    cardsContainer.classList.add("display-none")
+    recipeInfo.innerHTML = `<div class="">
+    <h1 id="titulo">${curr.recipe.label}</h1>
+<img id="imagen" src=${curr.recipe.images.SMALL.url}>
+<h1>Ingredients</h1>
+<div id="ingredients">${curr.recipe.ingredientLines}</div>
+<h1>Diet Labels</h1>
+<div id="dietLabels">${curr.recipe.dietLabels}</div> 
+<p>See full recipe on </p>
+<div id="url">${curr.recipe.url}</div> 
 </div>`
 }

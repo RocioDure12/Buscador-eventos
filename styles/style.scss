@@ -4,11 +4,13 @@
 @import "components/card";
 @import "components/form";
 @import "components/navbar";
+@import "components/animation.scss";
 body {
     background-color: $ligh-grey;
 }
 
 .hero {
+//visibility: hidden;
     @include flex($direction: row, $justify: flex-start, $align: end);
     background-image: $background-image;
     color: $white;
