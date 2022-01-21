@@ -1,4 +1,4 @@
-const form = document.querySelector("#form")
+const form = document.querySelector(".form")
 const inputSearch = document.querySelector("#input-search")
 const selectMealtype = document.querySelector("#select-mealtype")
 const selectDiet = document.querySelector("#select-diet")
@@ -7,8 +7,10 @@ const cardsContainer = document.querySelector(".cards-container")
 const card = document.querySelector(".card")
 const recipeInfo = document.querySelector(".card-recipe-info")
 const btnNext = document.querySelector("#btn-next")
+const sectionHero=document.querySelector(".hero")
+const navBar=document.querySelector(".nav-bar")
 let currentLink
-let nextLink
+let nextLin
 
 
 const loadData = (link) => {
@@ -61,8 +63,11 @@ form.onsubmit = (e) => {
 
 const showDetails = (curr) => {
     console.log(curr)
-    //console.log(curr.recipe.calories)
     cardsContainer.classList.add("display-none")
+    sectionHero.classList.add("display-none")
+    form.classList.add("display-none")
+    navBar.classList.remove("hidden")
+
     recipeInfo.innerHTML = `<div class="">
     <h1 id="titulo">${curr.recipe.label}</h1>
 <img id="imagen" src=${curr.recipe.images.SMALL.url}>

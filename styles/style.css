@@ -63,7 +63,7 @@ img {
   font-size: 12px;
 }
 
-#form {
+.form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -82,8 +82,8 @@ img {
   margin-top: 10px;
 }
 
-#form select,
-#form input {
+.form select,
+.form input {
   width: 100%;
   height: 42px;
   border-radius: 0;
@@ -95,7 +95,7 @@ img {
   text-align: center;
 }
 
-#form #btn-search {
+.form #btn-search {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -117,7 +117,6 @@ img {
 }
 
 .nav-bar {
-  visibility: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -127,16 +126,21 @@ img {
   width: 100%;
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
           box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
-  padding: 20px;
+  padding: 0.75rem;
   position: fixed;
   background-image: -webkit-gradient(linear, right top, left top, from(#e5a44a), color-stop(#CF8BF3), to(#A770EF));
   background-image: linear-gradient(to left, #e5a44a, #CF8BF3, #A770EF);
-  color: #ffffff;
   font-size: 2rem;
+}
+
+.nav-bar div {
+  -webkit-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
 }
 
 .nav-bar img {
   width: 50px;
+  border-radius: 15p;
 }
 
 .loading {
@@ -266,6 +270,10 @@ body {
 
 .display-none {
   display: none;
+}
+
+.hidden {
+  visibility: hidden;
 }
 
 .main-container {
