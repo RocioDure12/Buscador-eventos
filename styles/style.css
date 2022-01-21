@@ -32,110 +32,82 @@ img {
   width: 100%;
 }
 
-.card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 0.75rem;
-  border: 1px solid #ddd;
-  -webkit-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
-          box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
-  width: 275px;
-  border-radius: 15px;
-}
-
-/*   .card-title {
-        text-align: center;
-        font-size: $font-size-sm;
-        padding-bottom: $base-padding;
-        font-weight: bold;
-    }
-    .card-body {
-        font-size: $base-font-size;
-    }
-}*/
 .cards-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 600px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 750px;
 }
 
-.section-recipe-info {
-  visibility: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.card-recipe-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.cards-container .card {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 700px;
+  background-color: #ffffff;
   padding: 0.75rem;
   border: 1px solid #ddd;
   -webkit-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
           box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+  width: 240px;
   border-radius: 15px;
+  margin-top: 10px;
+}
+
+.cards-container .card h1 {
+  font-size: 12px;
 }
 
 #form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 10px;
-  width: 300px;
-  font-size: 0.75rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 700px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+  padding: 0.75rem;
+  border-radius: 15px;
+  margin-top: 10px;
 }
 
+#form select,
 #form input {
   width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  border: 1px solid #ccc;
+  height: 42px;
+  border-radius: 0;
+  background: #f0f0f0;
+  font-size: 1em;
+  color: #999;
+  border: 2px solid rgba(0, 0, 0, 0.2);
   border-radius: 15px;
+  text-align: center;
 }
 
-#form select {
-  width: 100%;
-  color: black;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 15px;
-}
-
-#btn-search {
+#form #btn-search {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: #ddd;
   border: none;
   color: black;
-  padding: 10px 20px;
+  padding: 10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  margin: 4px 2px;
   cursor: pointer;
-  border-radius: 16px;
+  border-radius: 15px;
 }
 
 #btn-search:hover {
@@ -193,7 +165,7 @@ img {
 }
 
 .loading .dot:nth-child(1) {
-  background: #7ef9ff;
+  background: #e5a44a;
 }
 
 .loading .dot:nth-child(1)::before {
@@ -202,7 +174,7 @@ img {
 }
 
 .loading .dot:nth-child(2) {
-  background: #89cff0;
+  background: #a770ef;
 }
 
 .loading .dot:nth-child(2)::before {
@@ -211,7 +183,7 @@ img {
 }
 
 .loading .dot:nth-child(3) {
-  background: #4682b4;
+  background: #e5a44a;
 }
 
 .loading .dot:nth-child(3)::before {
@@ -220,7 +192,7 @@ img {
 }
 
 .loading .dot:nth-child(4) {
-  background: #0f52ba;
+  background: #a770ef;
 }
 
 .loading .dot:nth-child(4)::before {
@@ -229,7 +201,7 @@ img {
 }
 
 .loading .dot:nth-child(5) {
-  background: #000080;
+  background: #e5a44a;
 }
 
 .loading .dot:nth-child(5)::before {
@@ -294,5 +266,21 @@ body {
 
 .display-none {
   display: none;
+}
+
+.main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=style.css.map */

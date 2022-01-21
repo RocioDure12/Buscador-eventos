@@ -1,5 +1,5 @@
 .loading {
-    $colors: #7ef9ff, #89cff0, #4682b4, #0f52ba, #000080;
+    $colors:$secondary-color,$primary, $secondary-color, $primary, $secondary-color;
     display: flex;
   
     .dot {

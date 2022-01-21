@@ -74,3 +74,10 @@ const showDetails = (curr) => {
 <div id="url">${curr.recipe.url}</div> 
 </div>`
 }
+
+ 
+function changeMode() { 
+    const cuerpoweb = document.body; 
+    cuerpoweb.classList.toggle("oscuro"); 
+}
+ 
