@@ -4,9 +4,11 @@
 @import "components/card";
 @import "components/form";
 @import "components/navbar";
-@import "components/animation.scss";
+@import "components/animation";
+@import "components/button";
+
 body {
-    background-color: $ligh-grey;
+    background-color:$ligh-grey;
 }
 
 .hero {

@@ -10,7 +10,7 @@ const btnNext = document.querySelector("#btn-next")
 const sectionHero=document.querySelector(".hero")
 const navBar=document.querySelector(".nav-bar")
 let currentLink
-let nextLin
+let nextLink
 
 
 const loadData = (link) => {
@@ -67,6 +67,7 @@ const showDetails = (curr) => {
     sectionHero.classList.add("display-none")
     form.classList.add("display-none")
     navBar.classList.remove("hidden")
+    recipeInfo.classList.remove("display-none")
 
     recipeInfo.innerHTML = `<div class="">
     <h1 id="titulo">${curr.recipe.label}</h1>
@@ -85,4 +86,14 @@ function changeMode() {
     const cuerpoweb = document.body; 
     cuerpoweb.classList.toggle("oscuro"); 
 }
- 
+
+const iconInicio=document.querySelector(".icon")
+ iconInicio.onclick=()=>{
+     recipeInfo.classList.add("display-none")
+     navBar.classList.add("hidden") 
+     cardsContainer.classList.remove("display-none")
+     sectionHero.classList.remove("display-none")
+     form.classList.remove("display-none")
+
+
+ }
