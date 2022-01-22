@@ -111,7 +111,7 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 700px;
+  width: 875px;
   background-color: #ffffff;
   -webkit-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
           box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
@@ -312,7 +312,7 @@ img {
   background-color: #a770ef;
   border: none;
   color: #ffffff;
-  padding: 20px;
+  padding: 18px;
   text-align: center;
   font-size: 1.5rem;
   margin: 4px 2px;
@@ -321,13 +321,20 @@ img {
 }
 
 .btn-mode {
+  width: 50px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border: none;
-  color: black;
+  color: #ffffff;
   padding: 0.75rem;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
   border-radius: 15px;
+  background-color: #a770ef;
 }
 
 body {
