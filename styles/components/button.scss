@@ -1,7 +1,41 @@
-.btn-mode{
-    border-radius:10px;
-
-    background-color:$dark-gray;
-    width: 30px;
-    
+#btn-search {
+    align-self: flex-end;
+    justify-content: center;
+    background-color: #ddd;
+    border: none;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: $base-border-radius;
+   
 }
+
+#btn-search:hover {
+background-image: $background-image;
+color: $white;
+}
+
+.btn-next{
+    background-color:$primary;
+    border: none;
+    color:$white;
+    padding: 20px;
+    text-align: center;
+    font-size:$font-size-lg;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.btn-mode{
+   
+    border: none;
+    color: black;
+    padding:$base-padding;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius:$base-border-radius;
+  }
+  

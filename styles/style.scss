@@ -8,19 +8,20 @@
 @import "components/button";
 
 body {
-    background-color:$ligh-grey;
+    background-color: $ligh-grey;
 }
 
-.hero {
-//visibility: hidden;
-    @include flex($direction: row, $justify: flex-start, $align: end);
+.hero-container {
+    display: flex;
+    justify-content: center;
     background-image: $background-image;
     color: $white;
     font-size: $font-size-xl;
     box-shadow: $base-box-shadow;
     padding: $base-padding;
-    .container-image-hero {
-        width: 350px;
+
+    img {
+        width: 250px;
     }
 }
 
@@ -28,13 +29,17 @@ body {
     display: none;
 }
 
-.hidden{
+.hidden {
     visibility: hidden;
 }
 
-.main-container{
+.main-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.padding{
+    padding: 100px;
 }

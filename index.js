@@ -6,9 +6,11 @@ const btnSearch = document.querySelector("#btn-search")
 const cardsContainer = document.querySelector(".cards-container")
 const card = document.querySelector(".card")
 const recipeInfo = document.querySelector(".card-recipe-info")
-const btnNext = document.querySelector("#btn-next")
-const sectionHero=document.querySelector(".hero")
+const btnNext = document.querySelector(".btn-next")
+const sectionHero=document.querySelector(".hero-container")
 const navBar=document.querySelector(".nav-bar")
+const mainContainer=document.querySelector(".main-container")
+const secRecipeInfo=document.querySelector(".section-recipe-info")
 let currentLink
 let nextLink
 
@@ -67,33 +69,37 @@ const showDetails = (curr) => {
     sectionHero.classList.add("display-none")
     form.classList.add("display-none")
     navBar.classList.remove("hidden")
-    recipeInfo.classList.remove("display-none")
+    secRecipeInfo.classList.remove("display-none")
+    btnNext.classList.add("display-none")
+    mainContainer.classList.add("padding")
 
     recipeInfo.innerHTML = `<div class="">
     <h1 id="titulo">${curr.recipe.label}</h1>
 <img id="imagen" src=${curr.recipe.images.SMALL.url}>
-<h1>Ingredients</h1>
+<h3>Ingredients</h3>
 <div id="ingredients">${curr.recipe.ingredientLines}</div>
-<h1>Diet Labels</h1>
-<div id="dietLabels">${curr.recipe.dietLabels}</div> 
+<h3>Diet Labels</h3>
+<div id="dietLabels">${curr.recipe.dietLabels}</div>
+<h3>Instructions</h3>
 <p>See full recipe on </p>
-<div id="url">${curr.recipe.url}</div> 
+<div id="url"><a href='${curr.recipe.url}'>Link here</a></div> 
 </div>`
 }
 
  
-function changeMode() { 
-    const cuerpoweb = document.body; 
-    cuerpoweb.classList.toggle("oscuro"); 
-}
-
 const iconInicio=document.querySelector(".icon")
  iconInicio.onclick=()=>{
-     recipeInfo.classList.add("display-none")
+     secRecipeInfo.classList.add("display-none")
      navBar.classList.add("hidden") 
      cardsContainer.classList.remove("display-none")
      sectionHero.classList.remove("display-none")
      form.classList.remove("display-none")
-
-
+     mainContainer.classList.remove("padding")
+     btnNext.classList.remove("display-none")
+    
  }
+
+const btnMode=document.querySelector(".btn-mode")
+const body= document.querySelector("body")
+
+   

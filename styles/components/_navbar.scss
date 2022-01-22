@@ -1,18 +1,27 @@
 .nav-bar {
     display: flex;
-    justify-content: flex-start;
+    justify-content: start;
     width: 100%;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    box-shadow:$base-box-shadow;
     padding:$base-padding;
     position: fixed;
     background-image: $background-image;
-    font-size: $font-size-xl;
+    font-size: $font-size-lg;
+    color:$white;
     div{
-        box-shadow: $base-box-shadow;
+       
+        padding: $base-padding;
     }
     img{
+      
         width: 50px;
-        border-radius: 15p;
-
+        box-shadow: $base-box-shadow;
+        border-radius: 15px;
+        cursor: pointer;
     }
+    p{
+        display: flex;
+        align-items: center;
+    }
+
 }

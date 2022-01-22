@@ -12,20 +12,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;800&display=swap" rel="stylesheet">
 
 </head>
-<nav class="nav-bar hidden">
-    <div><img class ="icon" src="images/favicon.png"></div>
-</nav>
 
 <body>
-    <div class="hero">
-        <p>Find your recipe</p>
-        <div class="container-image-hero">
-            <img src="images/undraw_healthy_options_sdo3.svg">
-        </div>
+    <div class="hero-container">
+
         <div>
-            <button type="button" class="btn-mode" onclick="cambiarModo()"><i class="fas fa-moon"></i> / <i class="fas fa-sun"></i></button>
+            <img src="images/undraw_healthy_options_sdo3.svg" alt="">
+            <p>Find your recipe</p>
+        </div>
+
+        <div>
+
         </div>
     </div>
+
+    <nav class="nav-bar hidden">
+        <div>
+            <img class="icon" src="images/favicon.png">
+        </div>
+        <p><i class="fas fa-arrow-left"></i> Back</p>
+    </nav>
+
     <main class="main-container">
 
         <form class="form">
@@ -51,17 +58,23 @@
                 </select>
             </div>
             <button id="btn-search" type="submit">Search</button>
+         
+            <!--<i class='far fa-sun'>-->
         </form>
+        <button class="btn-mode">Mode <i class="far fa-moon"></i></button>
 
         <section class="cards-container">
 
         </section>
-
-        <section class="section-recipe-info">
+        
+        <section class="section-recipe-info display-none">
             <div class="card-recipe-info"></div>
         </section>
+        
+            <button type="button" class="btn-next"><i class="fas fa-search-plus"></i></button>
+        
     </main>
-    <button id="btn-next">ver mas(agregar animacionen este btn)</button>
+  
 
     <!--
         

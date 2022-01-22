@@ -18,21 +18,21 @@
         color: #999;
         border: 2px solid rgba(0, 0, 0, 0.2);
         border-radius:$base-border-radius;
-        text-align: center;
 
     }
    
     #btn-search {
+        align-self: flex-end;
         justify-content: center;
         background-color: #ddd;
         border: none;
         color: black;
-        padding: 10px;
+        padding: $base-padding;
         text-align: center;
         text-decoration: none;
-        display: inline-block;
         cursor: pointer;
         border-radius: $base-border-radius;
+       
     }
 }
 
