@@ -12,43 +12,76 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;800&display=swap" rel="stylesheet">
 
 </head>
-<nav class="nav-bar">
-    <a><i class="fas fa-utensils"></i> Recipes <i class="fas fa-utensils"></i></a>
-</nav>
 
 <body>
-    <div class="hero">
-        <p>Find your recipe</p>
-        <div class="container-image-hero">
-            <img src="images/undraw_healthy_options_sdo3.svg">
+    <div class="hero-container view">
+        <div>
+            <img src="images/undraw_healthy_options_sdo3.svg" alt="">
+            <p>Find your recipe</p>
         </div>
     </div>
 
-    <form id="form">
-        <label>Key word</label>
-        <input id="input-search" type="text" required>
-        <label>Mealtype</label>
-        <select name="" id="select-mealtype" required>
-            <option value="Breakfast">Breakfast</option>
-            <option value="Dinner">Lunch</option>
-            <option value="Snack">Snack</option>
-            <option value="Dinner">Dinner</option>
-        </select>
+    <nav class="nav-bar display-none view">
+        <div>
+            <i class=" icon fas fa-arrow-left"></i>
+        </div>
 
-        <label>Diet</label>
-        <select id="select-diet">
-            <option value="" selected>Everything</option>
-            <option value="vegetarian">Vegetarian</option>
-            <option value="vegan">Vegan</option>
-        </select>
-        <button id="btn-search" type="submit">Search</button>
-    </form>
+    </nav>
 
-    <section class="cards-container">
+    <main class="main-container view">
+
+        <form class="form">
+            <div class="cont-key-word">
+                <label>Key word</label>
+                <input id="input-search" type="text" required>
+            </div>
+            <div class="cont-mealtype">
+                <label>Mealtype</label>
+                <select name="" id="select-mealtype" required>
+                    <option value="Breakfast">Breakfast</option>
+                    <option value="Dinner">Lunch</option>
+                    <option value="Snack">Snack</option>
+                    <option value="Dinner">Dinner</option>
+                </select>
+            </div>
+            <div class="cont-diet">
+                <label>Diet</label>
+                <select id="select-diet">
+                    <option value="" selected>Everything</option>
+                    <option value="vegetarian">Vegetarian</option>
+                    <option value="vegan">Vegan</option>
+                </select>
+            </div>
+            <button id="btn-search" type="submit">Search</button>
+            <button type="button" class="btn-mode"><i class="far fa-moon"></i></button>
+
+            <!--<i class='far fa-sun'>-->
+        </form>
+        <!--<button class="btn-mode">Mode <i class="far fa-moon"></i></button>-->
+
+        <section class="cards-container view">
+            
+        </section>
+
+        <button type="button" class="btn-next"><i class="fas fa-search-plus"></i></button>
+    </main>
+
+    <section class="section-recipe-info display-none view">
+        <div class="card-recipe-info"></div>
     </section>
-    <button id="btn-next">ver mas(agregar animacionen este btn)</button>
+
+
+
+    <div class="loading view display-none">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
 
     <script src="index.js"></script>
+    </main>
 </body>
 
 </html>

@@ -1,13 +1,30 @@
-const form = document.querySelector("#form")
+const form = document.querySelector(".form")
 const inputSearch = document.querySelector("#input-search")
 const selectMealtype = document.querySelector("#select-mealtype")
 const selectDiet = document.querySelector("#select-diet")
 const btnSearch = document.querySelector("#btn-search")
 const cardsContainer = document.querySelector(".cards-container")
 const card = document.querySelector(".card")
-const btnNext = document.querySelector("#btn-next")
+const recipeInfo = document.querySelector(".card-recipe-info")
+const btnNext = document.querySelector(".btn-next")
+const sectionHero = document.querySelector(".hero-container")
+const navBar = document.querySelector(".nav-bar")
+const mainContainer = document.querySelector(".main-container")
+const secRecipeInfo = document.querySelector(".section-recipe-info")
 let currentLink
 let nextLink
+const views = document.querySelectorAll(".view")
+const loading=document.querySelector(".loading")
+
+const showViews = (element) => {
+    element.classList.remove("display-none")
+}
+
+const hideViews = () => {
+    for (let i = 0; i < views.length; i++) {
+        views[i].classList.add("display-none")
+    }
+}
 
 
 const loadData = (link) => {
@@ -36,7 +53,7 @@ const renderHtml = (data) => {
     for (let i = 0; i < cards.length; i++) {
         const card = cards[i];
         card.onclick = () => {
-            showDetails(data[i], card)
+            showDetails(data[i])
         }
     }
 }
@@ -58,12 +75,37 @@ form.onsubmit = (e) => {
 
 }
 
-const showDetails = (curr, card) => {
-    console.log(curr.recipe.calories)
-    card.classList.add("display-none")
-    cardsContainer.innerHTML = `<div class="card">
-<img id="imagen" src=${curr.recipe.image}>
-<h1 id="titulo">${curr.recipe.label}</h1>
-<div id="ingredientes">${curr.recipe.ingredientLines}</div> 
+const showDetails = (curr) => {
+    console.log(curr)
+    hideViews()
+    showViews(navBar)
+    showViews(secRecipeInfo)
+
+    recipeInfo.innerHTML = `<div class="">
+    <h1 id="titulo">${curr.recipe.label}</h1>
+<img id="imagen" src=${curr.recipe.images.SMALL.url}>
+<h3>Ingredients</h3>
+<div id="ingredients">${curr.recipe.ingredientLines}</div>
+<h3>Diet Labels</h3>
+<div id="dietLabels">${curr.recipe.dietLabels}</div>
+<h3>Instructions</h3>
+<p>See full recipe on </p>
+<div id="url"><a href='${curr.recipe.url}'>Link here</a></div> 
 </div>`
 }
+
+
+const iconInicio = document.querySelector(".icon")
+iconInicio.onclick = () => {
+hideViews()
+showViews(sectionHero)
+showViews(mainContainer)
+showViews(form)
+showViews(cardsContainer)
+
+}
+
+//const btnMode=document.querySelector(".btn-mode")
+//const body= document.querySelector("body")
+
+

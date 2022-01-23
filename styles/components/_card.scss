@@ -1,28 +1,51 @@
-.card {
-    display: flex;
-    flex-direction: column;
-    padding: $base-padding;
-    border: $base-border-thickness solid #ddd;
-    box-shadow: $base-box-shadow;
-    width: 275px;
-    border-radius: $base-border-radius;
-}
-
-
-/*   .card-title {
-        text-align: center;
-        font-size: $font-size-sm;
-        padding-bottom: $base-padding;
-        font-weight: bold;
-    }
-    .card-body {
-        font-size: $base-font-size;
-    }
-}*/
-
 .cards-container {
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
-    width: 600px;
+    justify-content: space-between;
+    width: 750px;
+
+    .card {
+        flex-direction: column;
+        background-color: $white;
+        padding: $base-padding;
+        border: $base-border-thickness solid #ddd;
+        box-shadow: $base-box-shadow;
+        width: 240px;
+        border-radius: $base-border-radius;
+        margin-top: 10px;
+        h1{
+            font-size: 12px;
+        }
+            
+    }
+    
+   
 }
+
+.section-recipe-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $ligh-grey;
+ 
+    .card-recipe-info{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 600px;
+        background-color:$white;
+        border-radius: $base-border-radius;
+        padding: $base-padding;
+        margin-top: $base-margin;
+        line-height: 1.6;
+        text-align: justify;
+        margin-top: 10%;
+
+    }
+    img{
+        width:300px;
+       border-radius: $base-border-radius;
+    }
+}
+
+

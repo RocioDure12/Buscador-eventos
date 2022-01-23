@@ -4,22 +4,45 @@
 @import "components/card";
 @import "components/form";
 @import "components/navbar";
+@import "components/animation";
+@import "components/button";
+@import "components/mediaqueries.scss";
+
 body {
     background-color: $ligh-grey;
 }
 
-.hero {
-    @include flex($direction: row, $justify: flex-start, $align: end);
+.hero-container {
+    display: flex;
+    justify-content: center;
     background-image: $background-image;
     color: $white;
     font-size: $font-size-xl;
     box-shadow: $base-box-shadow;
     padding: $base-padding;
-    .container-image-hero {
-        width: 350px;
+
+    img {
+        width: 250px;
     }
 }
 
+
+.hidden {
+    visibility: hidden;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .display-none {
     display: none;
+}
+
+.padding{
+    padding: 50px;
 }
