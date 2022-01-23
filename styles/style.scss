@@ -15,8 +15,8 @@ body {
 .hero-container {
     display: flex;
     justify-content: center;
-    background-image: $background-image;
-    color: $white;
+    background-image: $background-gradient;
+    color: $light-primary;
     font-size: $font-size-xl;
     box-shadow: $base-box-shadow;
     padding: $base-padding;
