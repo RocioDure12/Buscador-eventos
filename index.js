@@ -28,6 +28,7 @@ const hideViews = () => {
 
 
 const loadData = (link) => {
+    loading.classList.remove("display-none")
     currentLink = link
     fetch(link)
         .then(res => res.json())
@@ -35,6 +36,7 @@ const loadData = (link) => {
             console.log(data)
             nextLink = data._links.next ? data._links.next.href : null
             renderHtml(data.hits)
+            loading.classList.add("display-none")
         })
 }
 
