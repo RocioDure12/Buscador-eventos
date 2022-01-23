@@ -7,19 +7,18 @@
     text-align: center;
     text-decoration: none;
     cursor: pointer;
-    border-radius: $base-border-radius;
-   
+    border-radius:$base-border-radius;
 }
 
 #btn-search:hover {
-background-image: $background-image;
-color: $white;
+background-image:$background-gradient;
+color: $light-primary;
 }
 
 .btn-next{
     background-color:$primary;
     border: none;
-    color:$white;
+    color:$light-primary;
     padding: 18px;
     text-align: center;
     font-size:$font-size-lg;
@@ -33,12 +32,12 @@ color: $white;
     align-self: flex-end;
     justify-content: center;
     border: none;
-    color:$white;
+    color:$light-primary;
     padding:$base-padding;
     text-align: center;
     text-decoration: none;
     cursor: pointer;
     border-radius:$base-border-radius;
-    background-color:$primary;
+    background-color:$dark-secondary;
   }
   

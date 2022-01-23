@@ -6,7 +6,7 @@
 
     .card {
         flex-direction: column;
-        background-color: $white;
+        background-color: $light-primary;
         padding: $base-padding;
         border: $base-border-thickness solid #ddd;
         box-shadow: $base-box-shadow;
@@ -26,14 +26,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: $ligh-grey;
+    background-color: $light-primary;
  
     .card-recipe-info{
         flex-direction: column;
         align-items: center;
         justify-content: center;
         width: 600px;
-        background-color:$white;
+        background-color:$light-primary;
         border-radius: $base-border-radius;
         padding: $base-padding;
         margin-top: $base-margin;

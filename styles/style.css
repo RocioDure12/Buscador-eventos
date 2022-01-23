@@ -73,7 +73,7 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #efefef;
+  background-color: #ffffff;
 }
 
 .section-recipe-info .card-recipe-info {
@@ -347,7 +347,7 @@ img {
   text-decoration: none;
   cursor: pointer;
   border-radius: 15px;
-  background-color: #a770ef;
+  background-color: #28292b;
 }
 
 body {
@@ -400,5 +400,18 @@ body {
 
 .padding {
   padding: 50px;
+}
+
+body.dark-mode {
+  background-color: #18191b;
+  color: #ffffff;
+}
+
+body.dark-mode .form {
+  background-color: #28292b;
+}
+
+body.dark-mode .card {
+  background-color: #28292b;
 }
 /*# sourceMappingURL=style.css.map */

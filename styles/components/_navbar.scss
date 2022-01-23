@@ -5,9 +5,9 @@
     box-shadow:$base-box-shadow;
     padding:$base-padding;
     position: fixed;
-    background-image: $background-image;
+    background-image: $background-gradient;
     font-size: $font-size-lg;
-    color:$white;
+    color:$light-primary;
     div{
        
         padding: $base-padding;

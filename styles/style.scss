@@ -9,14 +9,14 @@
 @import "components/mediaqueries.scss";
 
 body {
-    background-color: $ligh-grey;
+    background-color: $ligh-secondary;
 }
 
 .hero-container {
     display: flex;
     justify-content: center;
-    background-image: $background-image;
-    color: $white;
+    background-image: $background-gradient;
+    color: $light-primary;
     font-size: $font-size-xl;
     box-shadow: $base-box-shadow;
     padding: $base-padding;
@@ -25,7 +25,6 @@ body {
         width: 250px;
     }
 }
-
 
 .hidden {
     visibility: hidden;
@@ -38,11 +37,31 @@ body {
     align-items: center;
 }
 
-
 .display-none {
     display: none;
 }
 
-.padding{
+.padding {
     padding: 50px;
+}
+
+//$primary:#a770ef;
+//$secondary-color:#e5a44a;
+//$error:#d32752;
+//$background-gradient:linear-gradient(to left, #e5a44a, #CF8BF3, #A770EF);
+//$light-primary:#ffffff;
+//$ligh-secondary:#efefef;
+//$dark-primary:#18191b;
+//$dark-secondary:#28292b;
+
+body.dark-mode {
+    background-color: $dark-primary;
+    color: $light-primary;
+
+    .form {
+        background-color: $dark-secondary;
+    }
+    .card {
+        background-color: $dark-secondary;
+    }
 }

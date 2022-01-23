@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: space-between;
     width: 875px;
-    background-color: $white;
+    background-color: $light-primary;
     box-shadow: $base-box-shadow;
     padding: $base-padding;
     border-radius: $base-border-radius;
@@ -37,6 +37,6 @@
 }
 
 #btn-search:hover {
-    background-image: $background-image;
-    color: $white;
+    background-image: $background-gradient;
+    color: $light-primary;
 }

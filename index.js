@@ -37,7 +37,6 @@ const loadData = (link) => {
             nextLink = data._links.next ? data._links.next.href : null
             renderHtml(data.hits)
             loading.classList.add("display-none")
-            
         })
 }
 
