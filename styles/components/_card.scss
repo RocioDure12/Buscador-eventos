@@ -27,6 +27,7 @@
     align-items: center;
     justify-content: center;
     background-color: $ligh-grey;
+ 
     .card-recipe-info{
         flex-direction: column;
         align-items: center;
@@ -38,6 +39,7 @@
         margin-top: $base-margin;
         line-height: 1.6;
         text-align: justify;
+        margin-top: 10%;
 
     }
     img{

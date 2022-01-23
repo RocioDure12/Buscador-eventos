@@ -7,12 +7,24 @@ const cardsContainer = document.querySelector(".cards-container")
 const card = document.querySelector(".card")
 const recipeInfo = document.querySelector(".card-recipe-info")
 const btnNext = document.querySelector(".btn-next")
-const sectionHero=document.querySelector(".hero-container")
-const navBar=document.querySelector(".nav-bar")
-const mainContainer=document.querySelector(".main-container")
-const secRecipeInfo=document.querySelector(".section-recipe-info")
+const sectionHero = document.querySelector(".hero-container")
+const navBar = document.querySelector(".nav-bar")
+const mainContainer = document.querySelector(".main-container")
+const secRecipeInfo = document.querySelector(".section-recipe-info")
 let currentLink
 let nextLink
+const views = document.querySelectorAll(".view")
+const loading=document.querySelector(".loading")
+
+const showViews = (element) => {
+    element.classList.remove("display-none")
+}
+
+const hideViews = () => {
+    for (let i = 0; i < views.length; i++) {
+        views[i].classList.add("display-none")
+    }
+}
 
 
 const loadData = (link) => {
@@ -65,13 +77,9 @@ form.onsubmit = (e) => {
 
 const showDetails = (curr) => {
     console.log(curr)
-    cardsContainer.classList.add("display-none")
-    sectionHero.classList.add("display-none")
-    form.classList.add("display-none")
-    navBar.classList.remove("hidden")
-    secRecipeInfo.classList.remove("display-none")
-    btnNext.classList.add("display-none")
-    mainContainer.classList.add("padding")
+    hideViews()
+    showViews(navBar)
+    showViews(secRecipeInfo)
 
     recipeInfo.innerHTML = `<div class="">
     <h1 id="titulo">${curr.recipe.label}</h1>
@@ -86,20 +94,18 @@ const showDetails = (curr) => {
 </div>`
 }
 
- 
-const iconInicio=document.querySelector(".icon")
- iconInicio.onclick=()=>{
-     secRecipeInfo.classList.add("display-none")
-     navBar.classList.add("hidden") 
-     cardsContainer.classList.remove("display-none")
-     sectionHero.classList.remove("display-none")
-     form.classList.remove("display-none")
-     mainContainer.classList.remove("padding")
-     btnNext.classList.remove("display-none")
-    
- }
 
-const btnMode=document.querySelector(".btn-mode")
-const body= document.querySelector("body")
+const iconInicio = document.querySelector(".icon")
+iconInicio.onclick = () => {
+hideViews()
+showViews(sectionHero)
+showViews(mainContainer)
+showViews(form)
+showViews(cardsContainer)
 
-   
+}
+
+//const btnMode=document.querySelector(".btn-mode")
+//const body= document.querySelector("body")
+
+

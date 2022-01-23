@@ -94,6 +94,7 @@ img {
   margin-top: 0.75rem;
   line-height: 1.6;
   text-align: justify;
+  margin-top: 10%;
 }
 
 .section-recipe-info img {
@@ -337,6 +338,18 @@ img {
   background-color: #a770ef;
 }
 
+@media (max-width: 768px) {
+  .main-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 body {
   background-color: #efefef;
 }
@@ -361,10 +374,6 @@ body {
   width: 250px;
 }
 
-.display-none {
-  display: none;
-}
-
 .hidden {
   visibility: hidden;
 }
@@ -385,7 +394,11 @@ body {
           align-items: center;
 }
 
+.display-none {
+  display: none;
+}
+
 .padding {
-  padding: 100px;
+  padding: 50px;
 }
 /*# sourceMappingURL=style.css.map */

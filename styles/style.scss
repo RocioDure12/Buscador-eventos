@@ -6,6 +6,7 @@
 @import "components/navbar";
 @import "components/animation";
 @import "components/button";
+@import "components/mediaqueries.scss";
 
 body {
     background-color: $ligh-grey;
@@ -25,9 +26,6 @@ body {
     }
 }
 
-.display-none {
-    display: none;
-}
 
 .hidden {
     visibility: hidden;
@@ -40,6 +38,11 @@ body {
     align-items: center;
 }
 
+
+.display-none {
+    display: none;
+}
+
 .padding{
-    padding: 100px;
+    padding: 50px;
 }
