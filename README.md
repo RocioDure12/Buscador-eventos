@@ -1,11 +1,11 @@
 ## Recipe search app
 
- This is my 4th project at ADA ITW IT's frontend workshop.
+ This is my 4th project as a student at ADA ITW's frontend workshop.
 
 ### Recipe listing app with the following functionalities:
 
 - Recipe search consuming a public API (Edanam) using parameters to customize shown results
-- Recipe details (image, calories, ingredients, link to the original recipe post)
+- Recipe details (image, diet labels, ingredients, link to the original recipe post)
 - Dark mode
 - Infinite scroll
 
