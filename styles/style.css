@@ -325,7 +325,7 @@ img {
   background-color: #a770ef;
   border: none;
   color: #ffffff;
-  padding: 18px;
+  padding: 15px;
   text-align: center;
   font-size: 1.5rem;
   margin: 4px 2px;
@@ -347,7 +347,7 @@ img {
   text-decoration: none;
   cursor: pointer;
   border-radius: 15px;
-  background-color: #28292b;
+  background-color: #a770ef;
 }
 
 body {
@@ -412,6 +412,15 @@ body.dark-mode .form {
 }
 
 body.dark-mode .card {
+  background-color: #28292b;
+}
+
+body.dark-mode .section-recipe-info {
+  background-color: #18191b;
+}
+
+body.dark-mode .card-recipe-info {
+  color: #ffffff;
   background-color: #28292b;
 }
 /*# sourceMappingURL=style.css.map */

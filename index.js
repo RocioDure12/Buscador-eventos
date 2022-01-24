@@ -14,7 +14,9 @@ const secRecipeInfo = document.querySelector(".section-recipe-info")
 let currentLink
 let nextLink
 const views = document.querySelectorAll(".view")
-const loading=document.querySelector(".loading")
+const loading = document.querySelector(".loading")
+const btnMode = document.querySelector(".btn-mode")
+const body = document.querySelector("body")
 
 const showViews = (element) => {
     element.classList.remove("display-none")
@@ -99,15 +101,21 @@ const showDetails = (curr) => {
 
 const iconInicio = document.querySelector(".icon")
 iconInicio.onclick = () => {
-hideViews()
-showViews(sectionHero)
-showViews(mainContainer)
-showViews(form)
-showViews(cardsContainer)
+    hideViews()
+    showViews(sectionHero)
+    showViews(mainContainer)
+    showViews(form)
+    showViews(cardsContainer)
 
 }
 
-//const btnMode=document.querySelector(".btn-mode")
-//const body= document.querySelector("body")
+btnMode.onclick = () => {
+    body.classList.toggle("dark-mode")
+
+    if (body.classList.contains("dark-mode")) {
+        btnMode.innerHTML ='<i class="fas fa-sun"></i>'
+    }
+    else { btnMode.innerHTML = '<i class="far fa-moon"></i>' }
+}
 
 
