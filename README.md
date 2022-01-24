@@ -15,10 +15,10 @@
 - HTML
 - SASS
 
-### App link: [https://rociodure12.github.io/search-recipes/] 
+### [App link](https://rociodure12.github.io/search-recipes/)
 
 ### Commands to run the app:
 - npm install
 - npm start
 
-### Api link: [https://www.edamam.com/]
+### [Api link](https://www.edamam.com/)
