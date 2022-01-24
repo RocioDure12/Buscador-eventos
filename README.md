@@ -1,6 +1,6 @@
 ## Recipe search app
 
-### This is my 4th project at ADA ITW IT's frontend workshop.
+ This is my 4th project at ADA ITW IT's frontend workshop.
 
 ### Recipe listing app with the following functionalities:
 
