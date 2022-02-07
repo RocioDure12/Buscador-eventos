@@ -9,18 +9,21 @@
 @import "components/mediaqueries.scss";
 
 body {
-    background-color: $ligh-secondary;
+    background-color: $light-secondary;
 }
 
 .hero-container {
     display: flex;
+    width: 100%;
     justify-content: center;
     background-image: $background-gradient;
     color: $light-primary;
     font-size: $font-size-xl;
     box-shadow: $base-box-shadow;
     padding: $base-padding;
-
+.hero-container > div{
+    width: 100%;
+}
     img {
         width: 250px;
     }
