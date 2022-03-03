@@ -2,8 +2,10 @@ const form = document.querySelector(".form")
 const inputSearch = document.querySelector("#input-search")
 const selectMealtype = document.querySelector("#select-mealtype")
 const selectDiet = document.querySelector("#select-diet")
+// no usas nunca esta variable 
 const btnSearch = document.querySelector("#btn-search")
 const cardsContainer = document.querySelector(".cards-container")
+// no usas nunca esta variable 
 const card = document.querySelector(".card")
 const recipeInfo = document.querySelector(".card-recipe-info")
 const btnNext = document.querySelector(".btn-next")
@@ -30,11 +32,13 @@ const hideViews = () => {
 
 
 const loadData = (link) => {
+    // excelente el loading
     loading.classList.remove("display-none")
     currentLink = link
     fetch(link)
         .then(res => res.json())
         .then((data) => {
+            // no dejes console log en una entrega
             console.log(data)
             nextLink = data._links.next ? data._links.next.href : null
             renderHtml(data.hits)
@@ -42,6 +46,8 @@ const loadData = (link) => {
         })
 }
 
+// las funciones que se ejecutan al principio de todo deben estar todas juntas al final
+// asi es mas facil de seguir el flujo de ejecucion de la pagina 
 loadData("https://api.edamam.com/api/recipes/v2?type=public&app_id=d76d54c6&app_key=c5f3fc901a11ea4aa0023d0a03af9e0e&imageSize=REGULAR")
 
 const renderHtml = (data) => {
@@ -80,6 +86,7 @@ form.onsubmit = (e) => {
 }
 
 const showDetails = (curr) => {
+    // no dejes console .log
     console.log(curr)
     hideViews()
     showViews(navBar)
@@ -98,7 +105,8 @@ const showDetails = (curr) => {
 </div>`
 }
 
-
+// los selectores del dom deben estar todos juntos al principio, salvo que los uses dentro de uns funcion
+// (porque no se renderizan apenas carga la web por ejemplo)
 const iconInicio = document.querySelector(".icon")
 iconInicio.onclick = () => {
     hideViews()

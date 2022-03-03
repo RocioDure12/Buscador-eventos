@@ -21,6 +21,7 @@ body {
     font-size: $font-size-xl;
     box-shadow: $base-box-shadow;
     padding: $base-padding;
+    // muuuy desprolijo el tabulado. es super importante cuando anidás en sass
 .hero-container > div{
     width: 100%;
 }
@@ -47,6 +48,7 @@ body {
 .padding {
     padding: 50px;
 }
+// no dejes codigo comentado en una entrega
 
 //$primary:#a770ef;
 //$secondary-color:#e5a44a;
@@ -58,6 +60,7 @@ body {
 //$dark-secondary:#28292b;
 
 body.dark-mode {
+    // el link de la pagina de detalle es casi imposible de leer en modo oscuro
     background-color: $dark-primary;
     color: $light-primary;
 
