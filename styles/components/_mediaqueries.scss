@@ -8,13 +8,14 @@
         grid-template-columns: 1/-1;
 
         .hero-container > div {
-            width: 20px;
+            width: 100%;
         }
         img {
-            width: 120px;
+         
+            width: 50%;
         }
         p {
-            font-size: $font-size-sm;
+            font-size: $font-size-lg;
         }
     }
 

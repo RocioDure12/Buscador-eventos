@@ -429,13 +429,13 @@ body {
         grid-template-columns: 1/-1;
   }
   .hero-container .hero-container > div {
-    width: 20px;
+    width: 100%;
   }
   .hero-container img {
-    width: 50px;
+    width: 50%;
   }
   .hero-container p {
-    font-size: 0.75rem;
+    font-size: 1.5rem;
   }
   .form {
     width: 200px;
