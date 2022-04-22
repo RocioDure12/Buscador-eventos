@@ -1,1 +1,41 @@
-/* No CSS *//*# sourceMappingURL=mediaqueries.css.map */
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;800&display=swap);
+@media screen and (max-width: 768px) {
+  .form {
+    width: 300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .form .cont-mealtype, .form .cont-diet {
+    width: 100%;
+  }
+  .form #btn-search {
+    margin-top: 10px;
+    width: 100%;
+    background-image: -webkit-gradient(linear, right top, left top, from(#e5a44a), color-stop(#CF8BF3), to(#A770EF));
+    background-image: linear-gradient(to left, #e5a44a, #CF8BF3, #A770EF);
+    color: #ffffff;
+  }
+  .form .btn-mode {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .cards-container {
+    width: 300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=mediaqueries.css.map */

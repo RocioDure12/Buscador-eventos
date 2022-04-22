@@ -1,0 +1,57 @@
+//320px — 480px: Dispositivos móviles
+//481px - 768px: iPads, tabletas
+//769px — 1024px: pantallas pequeñas, portátiles
+//1025px — 1200px: Computadoras de escritorio, pantallas grandes
+@media screen and (max-width: 768px) {
+    .hero-container {
+        display: grid;
+        grid-template-columns: 1/-1;
+
+        .hero-container > div {
+            width: 20px;
+        }
+        img {
+            width: 120px;
+        }
+        p {
+            font-size: $font-size-sm;
+        }
+    }
+
+    .form {
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        font-size: $font-size-sm;
+
+        .cont-mealtype,
+        .cont-diet {
+            width: 100%;
+        }
+
+        #btn-search {
+            margin-top: 10px;
+            width: 100%;
+            background-image: $background-gradient;
+            color: $light-primary;
+        }
+
+        .btn-mode {
+            width: 100%;
+            margin-top: 10px;
+        }
+    }
+
+    .cards-container {
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .card {
+            width: 200px;
+            font-size: $font-size-sm;
+        }
+    }
+}
