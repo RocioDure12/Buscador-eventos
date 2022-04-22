@@ -6,12 +6,13 @@
     .hero-container {
         display: grid;
         grid-template-columns: 1/-1;
+   
 
         .hero-container > div {
             width: 100%;
+
         }
         img {
-         
             width: 50%;
         }
         p {
@@ -20,12 +21,13 @@
     }
 
     .form {
-        width: 200px;
+        max-width: 100%;
         display: flex;
         justify-content: center;
         flex-direction: column;
         font-size: $font-size-sm;
 
+        .cont-key-word,
         .cont-mealtype,
         .cont-diet {
             width: 100%;
@@ -45,13 +47,13 @@
     }
 
     .cards-container {
-        width: 250px;
+        max-width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
 
         .card {
-            width: 200px;
+            width: 90%;
             font-size: $font-size-sm;
         }
     }
