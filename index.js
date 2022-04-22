@@ -48,7 +48,7 @@ const renderHtml = (data) => {
     const html = data.reduce((acc, curr) => {
         return acc + `<div data-id=${curr._links.self.href} class="card">
                         <img src=${curr.recipe.image}>
-                        <h1>${curr.recipe.label}</h1>
+                        <p>${curr.recipe.label}</p>
                     </div>`
     }, "")
     cardsContainer.innerHTML += html
@@ -86,7 +86,7 @@ const showDetails = (curr) => {
     showViews(secRecipeInfo)
 
     recipeInfo.innerHTML = `<div class="">
-    <h1 id="titulo">${curr.recipe.label}</h1>
+    <h2 id="titulo">${curr.recipe.label}</h2>
 <img id="imagen" src=${curr.recipe.images.SMALL.url}>
 <h3>Ingredients</h3>
 <div id="ingredients">${curr.recipe.ingredientLines}</div>

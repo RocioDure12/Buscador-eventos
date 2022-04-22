@@ -3,11 +3,12 @@
     align-items: center;
     width: 850px;
     justify-content: space-evenly;
-    background-color: $light-primary;
+ 
     box-shadow: $base-box-shadow;
     padding: $base-padding;
     border-radius: $base-border-radius;
     margin-top: 10px;
+    
     select,
     input {
         width: 100%;
@@ -19,7 +20,7 @@
         border-radius:$base-border-radius;
 
     }
-   
+    
     #btn-search {
         align-self: flex-end;
         justify-content: center;

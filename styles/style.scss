@@ -6,11 +6,8 @@
 @import "components/navbar";
 @import "components/animation";
 @import "components/button";
-@import "components/mediaqueries.scss";
 
-body {
-    background-color: $light-secondary;
-}
+
 
 .hero-container {
     display: flex;
@@ -75,4 +72,10 @@ body.dark-mode {
         background-color: $dark-secondary;
     }
 }
+
+
+body {
+    background-color: $light-secondary;
+}
+@import "components/mediaqueries";
 
