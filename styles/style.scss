@@ -67,11 +67,16 @@ body.dark-mode {
         background-color: $dark-secondary;
     }
     .section-recipe-info{
-        background-color:$dark-primary;  
+        background-color:$dark-primary; 
+        
+        a{
+        color: $light-secondary;
+        }
     }
     .card-recipe-info{
         color: $light-primary;
         background-color: $dark-secondary;
+       
     }
 }
 

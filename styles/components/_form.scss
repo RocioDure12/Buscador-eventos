@@ -3,12 +3,11 @@
     align-items: center;
     width: 850px;
     justify-content: space-evenly;
- 
     box-shadow: $base-box-shadow;
     padding: $base-padding;
     border-radius: $base-border-radius;
     margin-top: 10px;
-    
+
     select,
     input {
         width: 100%;
@@ -17,14 +16,13 @@
         font-size: 1em;
         color: #999;
         border: 2px solid rgba(0, 0, 0, 0.2);
-        border-radius:$base-border-radius;
-
+        border-radius: $base-border-radius;
     }
-    
+
     #btn-search {
+        background-color: $primary;
         align-self: flex-end;
         justify-content: center;
-        background-color: #ddd;
         border: none;
         color: black;
         padding: $base-padding;
@@ -32,11 +30,10 @@
         text-decoration: none;
         cursor: pointer;
         border-radius: $base-border-radius;
-       
+        color: $light-primary;
     }
 }
 
-#btn-search:hover {
+#btn-search:hover{
     background-image: $background-gradient;
-    color: $light-primary;
 }

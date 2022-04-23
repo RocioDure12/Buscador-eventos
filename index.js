@@ -80,12 +80,11 @@ form.onsubmit = (e) => {
 }
 
 const showDetails = (curr) => {
-    console.log(curr)
     hideViews()
     showViews(navBar)
     showViews(secRecipeInfo)
 
-    recipeInfo.innerHTML = `<div class="">
+    recipeInfo.innerHTML = `<div>
     <h2 id="titulo">${curr.recipe.label}</h2>
 <img id="imagen" src=${curr.recipe.images.SMALL.url}>
 <h3>Ingredients</h3>
@@ -113,7 +112,7 @@ btnMode.onclick = () => {
     body.classList.toggle("dark-mode")
 
     if (body.classList.contains("dark-mode")) {
-        btnMode.innerHTML ='<i class="fas fa-sun"></i>'
+        btnMode.innerHTML = '<i class="fas fa-sun"></i>'
     }
     else { btnMode.innerHTML = '<i class="far fa-moon"></i>' }
 }
