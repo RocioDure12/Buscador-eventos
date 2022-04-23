@@ -4,15 +4,11 @@
 //1025px — 1200px: Computadoras de escritorio, pantallas grandes
 @media screen and (max-width: 768px) {
     .hero-container {
-        display: grid;
-        grid-template-columns: 1/-1;
-
         .hero-container > div {
             width: 100%;
         }
         img {
-         
-            width: 50%;
+            width: 80%;
         }
         p {
             font-size: $font-size-lg;
@@ -20,12 +16,13 @@
     }
 
     .form {
-        width: 200px;
+        max-width: 100%;
         display: flex;
         justify-content: center;
         flex-direction: column;
         font-size: $font-size-sm;
 
+        .cont-key-word,
         .cont-mealtype,
         .cont-diet {
             width: 100%;
@@ -45,14 +42,23 @@
     }
 
     .cards-container {
-        width: 250px;
+        max-width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
 
         .card {
-            width: 200px;
+            width: 90%;
             font-size: $font-size-sm;
         }
     }
+}
+
+.card-recipe-info {
+    max-width: 500px;
+}
+.card-recipe-info > div {
+    margin-top: 15%;
+    align-self: center;
+    width: 90%;
 }
